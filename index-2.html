@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Reet's LocalBoost helps local businesses grow online with websites, digital catalogues, QR solutions and digital support.">
+<title>Reet's LocalBoost — Digital Growth for Local Business</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f3f1ec;--paper:#fbfaf7;--ink:#171916;--muted:#73776e;--line:#d8d8cf;--lime:#d9ff42;--blue:#dce8ff;--orange:#ff7958;--mono:'DM Mono',monospace;--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,91%);margin:auto}
+.topline{height:5px;background:var(--lime)}header{position:sticky;top:0;z-index:10;background:#f3f1ecef;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:800 19px var(--display);letter-spacing:-1px}.brand span{color:#7d9417}.brand small{display:block;font:9px var(--mono);letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:2px}
+.navlinks{display:flex;gap:27px;font:10px var(--mono);letter-spacing:1px;text-transform:uppercase;color:#5f6259}.navlinks a:hover{color:#758d12}.navbtn{padding:13px 17px;background:var(--ink);color:white;font:10px var(--mono);letter-spacing:1px;text-transform:uppercase}
+.hero{padding:82px 0 68px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:410px;height:410px;border:1px solid #d5d3c8;border-radius:50%;right:-135px;top:8px;box-shadow:0 0 0 43px var(--bg),0 0 0 44px #d5d3c8,0 0 0 100px var(--bg),0 0 0 101px #d5d3c8;pointer-events:none}
+.kicker,.index{font:10px var(--mono);letter-spacing:2px;text-transform:uppercase;color:#777b6e}.kicker:before{content:"";display:inline-block;width:24px;height:7px;background:var(--lime);margin-right:10px}
+h1{font:800 clamp(53px,9vw,112px)/.91 var(--display);letter-spacing:-.085em;text-transform:uppercase;max-width:920px;margin:25px 0;position:relative;z-index:1}h1 span{color:#879d1b}
+.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;position:relative;z-index:2}.hero-bottom p{max-width:460px;font-size:15px;line-height:1.8;color:#62665d;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;gap:25px;align-items:center;padding:15px 18px;background:var(--lime);border:1px solid var(--ink);font:10px var(--mono);letter-spacing:1px;text-transform:uppercase;transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:4px 4px 0 var(--ink)}.btn.dark{background:var(--ink);color:white}
+.stamp{position:absolute;right:8%;top:58px;width:102px;height:102px;border:1px solid #a8aa9e;border-radius:50%;display:grid;place-items:center;text-align:center;font:9px/1.6 var(--mono);letter-spacing:1px;transform:rotate(12deg);z-index:2}
+.ticker{background:var(--lime);border-bottom:1px solid var(--ink);padding:12px 0;white-space:nowrap;overflow:hidden;font:10px var(--mono);letter-spacing:2px;text-transform:uppercase}.ticker span{padding:0 32px}.ticker b{font-size:15px}
+section.section{padding:75px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:25px;margin-bottom:30px}.section-head h2{font:800 clamp(36px,5vw,61px)/.98 var(--display);letter-spacing:-.07em;margin:10px 0 0;max-width:650px}.section-note{max-width:280px;color:var(--muted);font-size:13px;line-height:1.75;margin-top:23px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.intro-card{min-height:260px;padding:27px;border:1px solid var(--ink);position:relative;overflow:hidden}.intro-card.darkcard{background:#1b2021;color:#f7f5ee}.intro-card.bluecard{background:var(--blue)}.intro-card .tag{font:10px var(--mono);letter-spacing:1.5px;text-transform:uppercase;opacity:.7}.intro-card h3{font:800 clamp(30px,4vw,48px)/.98 var(--display);letter-spacing:-.07em;margin:52px 0 10px;max-width:420px}.intro-card p{font-size:13px;line-height:1.7;max-width:380px;opacity:.75}.orb{position:absolute;width:155px;height:155px;border:1px solid currentColor;border-radius:50%;right:-25px;bottom:-45px;opacity:.28;box-shadow:0 0 0 20px transparent,0 0 0 21px currentColor,0 0 0 42px transparent,0 0 0 43px currentColor}
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);border-left:1px solid var(--ink)}.service{padding:23px;min-height:205px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);background:var(--paper)}.service-top{display:flex;justify-content:space-between;font:10px var(--mono);color:#777}.service-icon{font-size:20px}.service h3{font:700 20px var(--display);letter-spacing:-.7px;margin:30px 0 8px}.service p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}
+.why{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px;align-items:start}.why-title h2{font:800 clamp(38px,5vw,60px)/.98 var(--display);letter-spacing:-.07em;margin:12px 0}.why-title p{font-size:13px;line-height:1.8;color:var(--muted)}.points{border-top:1px solid var(--ink)}.point{display:grid;grid-template-columns:45px 1fr;gap:15px;padding:18px 0;border-bottom:1px solid var(--line)}.point .n{font:11px var(--mono);color:#83971c}.point h3{font:700 17px var(--display);margin:0 0 5px}.point p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}.step{padding:22px 22px 10px 0;border-right:1px solid var(--line);margin-right:22px}.step:last-child{border:0;margin:0}.step .num{font:11px var(--mono);color:#82951b}.step h3{font:700 20px var(--display);margin:20px 0 8px}.step p{font-size:12px;line-height:1.75;color:var(--muted);max-width:280px}
+.about{background:#1b2021;color:#f5f3eb;padding:42px;display:grid;grid-template-columns:1fr .8fr;gap:35px;align-items:center}.about h2{font:800 clamp(36px,5vw,58px)/.98 var(--display);letter-spacing:-.07em;margin:14px 0}.about p{font-size:13px;line-height:1.85;color:#c2c5bb}.about-art{min-height:220px;border:1px solid #59605a;display:grid;place-items:center;position:relative}.about-art strong{font:800 clamp(40px,7vw,75px)/.9 var(--display);letter-spacing:-.09em;color:var(--lime);text-align:center}.about-art small{position:absolute;bottom:14px;right:15px;font:9px var(--mono);letter-spacing:1px;color:#c2c5bb}
+.contact{background:var(--lime);padding:42px;border:1px solid var(--ink);display:flex;justify-content:space-between;align-items:center;gap:25px}.contact h2{font:800 clamp(36px,5vw,60px)/.95 var(--display);letter-spacing:-.07em;margin:12px 0;max-width:620px}.contact p{font-size:13px;line-height:1.7;color:#4d5532;max-width:470px}.contact .btn{background:var(--ink);color:white;white-space:nowrap}
+footer{padding:24px 0 34px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font:10px var(--mono);letter-spacing:1px;text-transform:uppercase;color:#777a72}.foot strong{font:800 15px var(--display);letter-spacing:-.5px;text-transform:none;color:var(--ink)}
+@media(max-width:760px){nav{height:68px}.navlinks{display:none}.hero{padding:62px 0 52px}.stamp{width:75px;height:75px;right:5%;top:30px;font-size:7px}h1{font-size:clamp(51px,14vw,86px);margin-top:32px}.hero-bottom{display:block}.hero-bottom p{font-size:13px}.actions{margin-top:20px}.section-head{display:block}.section-note{margin-top:12px}.intro-grid{grid-template-columns:1fr}.intro-card{min-height:230px}.intro-card h3{margin-top:38px}.services{grid-template-columns:1fr 1fr}.service{min-height:190px;padding:17px}.service h3{font-size:17px;margin-top:22px}.why{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line);margin:0;padding:20px 0}.about{grid-template-columns:1fr;padding:27px}.about-art{min-height:170px}.contact{display:block;padding:28px}.contact .btn{margin-top:10px}.foot{flex-direction:column}}
+@media(max-width:420px){.services{grid-template-columns:1fr}.navbtn{padding:11px 12px;font-size:9px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">Reet's <span>LocalBoost</span><small>Digital growth partner</small></a>
+<div class="navlinks"><a href="#services">Solutions</a><a href="#why">Why us</a><a href="#process">Our process</a><a href="#about">About</a></div>
+<a class="navbtn" href="#contact">Let's connect ↗</a>
+</nav></div></header>
+<main id="home">
+<section class="hero"><div class="wrap">
+<div class="kicker">A smarter digital start for local business</div>
+<div class="stamp">LOCAL ROOTS<br>ONLINE REACH<br>✳ 2026</div>
+<h1>GROW LOCAL.<br>GO <span>DIGITAL.</span></h1>
+<div class="hero-bottom"><p>Helping small businesses take their next step online. From professional websites to digital catalogues and QR solutions, we make digital tools simpler and more accessible.</p><div class="actions"><a class="btn" href="#services">Explore solutions <b>↗</b></a><a class="btn dark" href="#contact">Get started <b>↗</b></a></div></div>
+</div></section>
+<div class="ticker"><span>REET'S LOCALBOOST</span><b>✳</b><span>SMALL BUSINESSES · BIG DIGITAL DREAMS</span><b>✳</b><span>INNOVATE · EMPOWER · GROW</span><b>✳</b><span>REET'S LOCALBOOST</span></div>
+<section class="section"><div class="wrap">
+<div class="section-head"><div><div class="index">01 / THE OPPORTUNITY</div><h2>Great local businesses deserve to be discovered.</h2></div><p class="section-note">Many small businesses offer excellent products and services but may not yet have the digital tools that help customers find them.</p></div>
+<div class="intro-grid">
+<article class="intro-card darkcard"><div class="tag">THE CHALLENGE / 01</div><h3>Good businesses can get overlooked online.</h3><p>Without a website, catalogue or clear online information, potential customers may struggle to learn about a business.</p><div class="orb"></div></article>
+<article class="intro-card bluecard"><div class="tag">OUR RESPONSE / 02</div><h3>Make going digital feel simple.</h3><p>LocalBoost brings useful digital services together in one approachable place, designed around the needs of local businesses.</p><div class="orb"></div></article>
+</div></div></section>
+<section class="section" id="services"><div class="wrap">
+<div class="section-head"><div><div class="index">02 / OUR SOLUTIONS</div><h2>Useful digital tools. One local partner.</h2></div><p class="section-note">A flexible set of services to help businesses present themselves clearly and connect with customers.</p></div>
+<div class="services">
+<article class="service"><div class="service-top"><span>01 / WEB</span><span class="service-icon">▣</span></div><h3>Professional Websites</h3><p>Responsive websites that introduce a business, explain its services and make enquiries easier.</p></article>
+<article class="service"><div class="service-top"><span>02 / CATALOGUE</span><span class="service-icon">▤</span></div><h3>Digital Catalogues</h3><p>Organised online displays for products, services, descriptions and useful customer information.</p></article>
+<article class="service"><div class="service-top"><span>03 / QR</span><span class="service-icon">⌗</span></div><h3>QR Code Solutions</h3><p>Quick-scan access to menus, catalogues, websites, contact details and other business links.</p></article>
+<article class="service"><div class="service-top"><span>04 / IDENTITY</span><span class="service-icon">✳</span></div><h3>Digital Business Cards</h3><p>Shareable digital profiles with key business details, contact information and links.</p></article>
+<article class="service"><div class="service-top"><span>05 / DISCOVERY</span><span class="service-icon">⌖</span></div><h3>Online Presence Setup</h3><p>Help organising accurate business details and improving how customers discover a business online.</p></article>
+<article class="service"><div class="service-top"><span>06 / SUPPORT</span><span class="service-icon">↗</span></div><h3>Digital Support</h3><p>Guidance with updates, basic website maintenance and keeping online information current.</p></article>
+</div></div></section>
+<section class="section" id="why"><div class="wrap why">
+<div class="why-title"><div class="index">03 / WHY LOCALBOOST</div><h2>Digital, without the complication.</h2><p>Our focus is to make useful online solutions easier to understand and access for small and growing businesses.</p></div>
+<div class="points">
+<div class="point"><div class="n">01</div><div><h3>Designed for local businesses</h3><p>Services are planned around the real needs of shops, service providers and small enterprises.</p></div></div>
+<div class="point"><div class="n">02</div><div><h3>Clear and practical</h3><p>Simple layouts and useful features help customers find information without confusion.</p></div></div>
+<div class="point"><div class="n">03</div><div><h3>Mobile-first thinking</h3><p>Digital experiences are designed to work across phones, tablets and computers.</p></div></div>
+<div class="point"><div class="n">04</div><div><h3>Flexible solutions</h3><p>Businesses can start with the service they need and build their digital presence over time.</p></div></div>
+</div></div></section>
+<section class="section" id="process"><div class="wrap">
+<div class="section-head"><div><div class="index">04 / HOW IT WORKS</div><h2>A clear path to getting online.</h2></div><p class="section-note">A simple three-stage process keeps every project organised and collaborative.</p></div>
+<div class="steps">
+<article class="step"><div class="num">STEP 01 / UNDERSTAND</div><h3>Tell us about your business.</h3><p>We learn about your business, customers, goals and the digital service that would help most.</p></article>
+<article class="step"><div class="num">STEP 02 / CREATE</div><h3>Plan the right solution.</h3><p>We prepare a suitable design and share a demo or plan for review before moving forward.</p></article>
+<article class="step"><div class="num">STEP 03 / GROW</div><h3>Launch and improve.</h3><p>Once approved, the solution is published and can be updated as the business grows.</p></article>
+</div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="about">
+<div><div class="index" style="color:var(--lime)">05 / ABOUT THE STARTUP</div><h2>Small businesses.<br>Bigger possibilities.</h2><p>Reet's LocalBoost is a proposed digital-solutions startup created to help local businesses become more visible and accessible online. Its mission is to bridge the gap between traditional local businesses and the opportunities of the digital world through practical, affordable and easy-to-use services.</p></div>
+<div class="about-art"><strong>LOCAL<br>IDEAS.<br><span style="color:white">DIGITAL</span><br>FUTURE.</strong><small>INNOVATE · EMPOWER · GROW</small></div>
+</div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact">
+<div><div class="index">06 / START A CONVERSATION</div><h2>Let's take your business one step forward.</h2><p>Have a business idea or want to explore a digital solution? Get in touch with Reet's LocalBoost. Contact details will be added when the new business email and social account are ready.</p></div>
+<a class="btn" href="mailto:">Contact LocalBoost <b>↗</b></a>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><strong>Reet's LocalBoost</strong><span>Small Businesses · Big Digital Dreams</span><span>INNOVATE · EMPOWER · GROW</span></div></footer>
+</body>
+</html>
